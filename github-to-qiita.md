@@ -10,6 +10,6 @@
 ## どうやるのか
 - それがわからない。
   - 先人の知恵をお借りすると、PushするタイミングでQiitaへ連携するコードが生産済みとのこと
-    https://qiita.com/khsk/items/ee915068077e5bea675e
+    https://www.inoue-kobo.com/restapi/qiita_posting/index.html
   - 機能は完璧、環境もローカルのGitのみと申し分ない
   - PWを埋め込むので、Private Repositoryとして作成する
