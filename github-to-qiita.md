@@ -18,3 +18,5 @@
 - Windows機を使用しているため、各種パスを若干変更
 - PythonはAnaconda3を入れていた、PerlはActivePerlさんを入れた
 - フォルダ関連を調整していないため、どう考えても動かないが、どういう流れで動くのかを理解するため、一度実行する
+- error: failed to push some refs to 'https://github.com/jun-g-0/notes.git'
+- 歯が立たないくらい汎用なエラー…おとなしくpre-pushファイルする。何ヶ月か数年後にまた戻ってこよう。
