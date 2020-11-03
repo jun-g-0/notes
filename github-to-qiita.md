@@ -12,3 +12,9 @@
   - 先人の知恵をお借りすると、[PushするタイミングでQiitaへ連携する](https://www.inoue-kobo.com/restapi/qiita_posting/index.html)コードが生産済みとのこと    
   - 機能は完璧、環境もローカルのGitのみと申し分ない
   - PWを埋め込むので、Private Repositoryとして作成する
+
+
+## 2020/11/03 やってみた
+- Windows機を使用しているため、各種パスを若干変更
+- PythonはAnaconda3を入れていた、PerlはActivePerlさんを入れた
+- フォルダ関連を調整していないため、どう考えても動かないが、どういう流れで動くのかを理解するため、一度実行する
