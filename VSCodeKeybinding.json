@@ -1,0 +1,224 @@
+// Place your key bindings in this file to override the defaults
+[
+  // delete original ctrl+shift+enter
+  {
+    "key": "ctrl+shift+enter",
+    "command": "-editor.action.insertLineBefore",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+enter",
+    "command": "-notebook.cell.insertCodeCellAbove",
+    "when": "notebookCellListFocused && !inputFocus"
+  },
+  {
+    "key": "ctrl+shift+enter",
+    "command": "-list.toggleSelection",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+shift+enter",
+    "command": "-search.action.replaceAllInFile",
+    "when": "fileMatchFocus && replaceActive && searchViewletVisible"
+  },
+  {
+    "key": "ctrl+shift+enter",
+    "command": "-search.action.replaceAllInFolder",
+    "when": "folderMatchFocus && replaceActive && searchViewletVisible"
+  },
+
+  // add new ctrl+shift+enter to toggle workbench and terminal
+
+  {
+    "key": "ctrl+shift+enter",
+    "command": "workbench.action.terminal.focus"
+  },
+  {
+    "key": "ctrl+shift+enter",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+
+  // delete original ctrl+page
+  {
+    "key": "ctrl+pagedown",
+    "command": "-selectNextPageSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+pagedown",
+    "command": "-workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+pageup",
+    "command": "-workbench.action.previousEditor"
+  },
+  
+  // add new ctrl+page to toggle workbench and terminal
+  {
+    "key": "ctrl+pagedown",
+    "command": "workbench.action.terminal.focus"
+  },
+  {
+    "key": "ctrl+pagedown",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+pageup",
+    "command": "workbench.action.terminal.focus"
+  },
+  {
+    "key": "ctrl+pageup",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+
+  // delete original ctrl+shift+page
+  {
+    "key": "ctrl+shift+pagedown",
+    "command": "-workbench.action.moveEditorRightInGroup"
+  },
+  
+  {
+    "key": "ctrl+shift+pageup",
+    "command": "-workbench.action.moveEditorLeftInGroup"
+  },
+
+  // add new ctrl+shift+page to toggle workbench's windows
+  {
+    "key": "ctrl+shift+pagedown",
+    "command": "workbench.action.nextEditor"
+  },
+  
+  {
+    "key": "ctrl+shift+pageup",
+    "command": "workbench.action.previousEditor"
+  },
+  
+  // delete original alt + 'JIKL', 'H;' and 'UO'
+  {
+    "key": "alt+o",
+    "command": "-C_Cpp.SwitchHeaderSource",
+    "when": "editorTextFocus && editorLangId == 'cpp'"
+  },
+  {
+    "key": "alt+o",
+    "command": "-C_Cpp.SwitchHeaderSource",
+    "when": "editorTextFocus && editorLangId == 'c'"
+  },
+  {
+    "key": "alt+k",
+    "command": "-keybindings.editor.recordSearchKeys",
+    "when": "inKeybindings && inKeybindingsSearch"
+  },
+  {
+    "key": "alt+l",
+    "command": "-toggleFindInSelection",
+    "when": "editorFocus"
+  },
+  {
+    "key": "alt+l",
+    "command": "-toggleSearchEditorContextLines",
+    "when": "inSearchEditor"
+  },
+
+  
+  // add new alt + 'JIKLM.', 'H;' and 'UO' to cursor, home/end and delete left/right
+
+  // {
+  //   "key": "alt+j",
+  //   "command": "cursorLeft",
+  //   "when": "textInputFocus"
+  // },
+  {
+    "key": "alt+j",
+    "command": "cursorWordAccessibilityLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+j",
+    "command": "cursorWordAccessibilityLeftSelect",
+    "when": "textInputFocus"
+  },
+
+  // {
+  //   "key": "alt+l",
+  //   "command": "cursorRight",
+  //   "when": "textInputFocus"
+  // },
+  {
+    "key": "alt+l",
+    "command": "cursorWordAccessibilityRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+l",
+    "command": "cursorWordAccessibilityRightSelect",
+    "when": "textInputFocus"
+  },
+
+  {
+    "key": "alt+i",
+    "command": "cursorUp",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+i",
+    "command": "cursorUpSelect",
+    "when": "textInputFocus"
+  },
+
+  {
+    "key": "alt+k",
+    "command": "cursorDown",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "alt+shift+k",
+    "command": "cursorDownSelect",
+    "when": "textInputFocus"
+  },
+  
+  {
+    "key": "alt+m",
+    "command": "cursorLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+m",
+    "command": "cursorLeftSelect",
+    "when": "textInputFocus"
+  },
+
+  {
+    "key": "alt+.",
+    "command": "cursorRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+.",
+    "command": "cursorRightSelect",
+    "when": "textInputFocus"
+  },
+
+  {
+    "key": "alt+;",
+    "command": "cursorEnd",
+    "when": "textInputFocus"
+  },
+
+
+  {
+    "key": "alt+u",
+    "command": "deleteLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "alt+o",
+    "command": "deleteRight",
+    "when": "textInputFocus"
+  },
+  
+    
+]
