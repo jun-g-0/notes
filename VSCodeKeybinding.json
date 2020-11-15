@@ -181,12 +181,12 @@
   },
   
   {
-    "key": "alt+m",
+    "key": "alt+n",
     "command": "cursorLeft",
     "when": "textInputFocus"
   },
   {
-    "key": "shift+alt+m",
+    "key": "shift+alt+n",
     "command": "cursorLeftSelect",
     "when": "textInputFocus"
   },
@@ -219,6 +219,20 @@
     "command": "deleteRight",
     "when": "textInputFocus"
   },
+  // for markdown
+  {
+    "key": "ctrl+shift+k",
+    "command": "editor.action.insertSnippet",
+    "when": "editorLangId == 'markdown'",
+    "args": {
+        "snippet": "[$TM_SELECTED_TEXT$1]($0)"
+    }
+  },
   
+  {
+    "key": "ctrl+shift+k",
+    "command": "-editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
     
 ]
